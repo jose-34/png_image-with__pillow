@@ -9,8 +9,8 @@ w, h = 300, 300
 # shape1 = [(-100, -100), (w - 100, h - 100)] 
  
 img = Image.new('RGB', (w, h), color = 'grey')
-img.save('pil_red.png')
-with Image.open("pil_red.png") as img:
+img.save('image.png')
+with Image.open("image.png") as img:
 
     # drawing diagonal lines
     draw = ImageDraw.Draw(img)
@@ -29,6 +29,6 @@ with Image.open("pil_red.png") as img:
 # img1.line(shape, fill ="red", width = 0)
 # img1.line(shape1, fill = "blue", width = 0)
 
-img.save('pil_red.png')
+img.save('image.png')
 
 img.show()
